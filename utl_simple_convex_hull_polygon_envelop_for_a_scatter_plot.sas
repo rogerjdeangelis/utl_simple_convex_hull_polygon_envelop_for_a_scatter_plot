@@ -91,9 +91,23 @@ plot(have, cex = 0.5);
 hpts <- chull(have);
 hpts <- c(hpts, hpts[1]);
 lines(have[hpts, ]);
+want <- have[hpts,];
 dev.off();
 endsubmit;
-import r=hpts  data=wrk.want;
+import r=want  data=wrk.want;
 run;quit;
 ');
+
+Envelope points
+
+Up to 40 obs from WANT total obs=23
+
+Obs        X           Y
+
+  1     1.79022    -0.03343
+  2     1.78624    -0.35364
+  3     1.66374    -0.61914
+  4     0.87877    -1.60430
+  5     0.22874    -1.82813
+  6    -0.06057    -1.82914
 
